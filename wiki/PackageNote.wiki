@@ -1,5 +1,5 @@
 #labels Phase-Design
-= 大致的说明一下项目的packages的构成 =
+= 项目的packages的构成 =
 
 == common == 
   * py_mining(通用的原始文本表示模块)
