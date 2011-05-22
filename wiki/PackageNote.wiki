@@ -1,0 +1,38 @@
+#labels Phase-Design
+= 大致的说明一下项目的packages的构成 =
+
+== common == 
+* py_mining(通用的原始文本表示模块)
+* configuration(通用的配置信息加载模块)
+
+== io ==
+* (未来跟矩阵的load、save等打交道的地方都放在这儿）
+
+== math ==
+* matrix(目前就是项目内部使用的csr格式，未来可能会扩展为普通的dense matrix，或者其他的矩阵格式）
+* 其他的一些跟数学打交道的地方（比如说与scipy的linalg的port）
+
+== clustering ==
+* k-means
+* 其他的聚类方法以及聚类评价器
+
+== classifier ==
+* 普通的naive_bayes
+* twc_naive_bayes
+* 其他的分类器以及分类评价器
+
+== filter ==
+* chisquare（卡方过滤器）
+* PCA（主成分提取）
+
+== cf ==
+* 协同过滤的方法
+
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
