@@ -28,16 +28,10 @@ http://images.cnblogs.com/cnblogs_com/LeftNotEasy/201102/201102271433165574.png
 
 图上的特征选择、朴素贝叶斯分类器就是属于门内的内容，具体的算法具体分析。对于特征选择算法(feature selection)和朴素贝叶斯(naive bayes)分类器，可以看看wikipedia的定义。
 
-=如何使用PyMining=
-==如何获取项目==
-（目前版本0.1，第二个开发版）
-
- GoogleCode地址：[http://python-data-mining-platform.googlecode.com/svn/trunk]
-
- 直接下载的zip包地址：[http://python-data-mining-platform.googlecode.com/files/pymining_0_1.zip 0.1版]
-
 ==如何使用项目==
 ===给出一段示例代码:===
+
+*更多的代码请参考代码中的example目录下的*
 
 {{{
 import math
@@ -58,6 +52,7 @@ if __name__ == "__main__":
     [trainx, trainy] = matCreater.CreateTrainMatrix("data/train.txt")
     chiFilter = ChiSquareFilter(config, "__filter__")
     chiFilter.TrainFilter(trainx, trainy)
+    [trainx, trainy] = chiFilter.MatrixFilter(trainx, trainy)
     nbModel = TwcNaiveBayes(config, "twc_naive_bayes")
     nbModel.Train(trainx, trainy)
 
@@ -150,6 +145,7 @@ naive_bayes跟filter差不多，这里就不再多说了。
   * NaiveBayes: (基本的）朴素贝叶斯分类器
   * TwcNaiveBayes：(带补偿)朴素贝叶斯分类器（相比上者，更推荐这个）
   * KMeans：可以用来做文本聚类的K-Means聚类器（例子请见kmeans.py）
+  * Pca: 主成分提取的模块
   * Sogou-Data-Importer：可以用来导入搜狗公布的新闻数据，具体使用方法请见另一篇wiki：[http://code.google.com/p/python-data-mining-platform/wiki/Additional_Tools?ts=1305465189&updated=Additional_Tools Sogou Importer]
 
 ===运行PyMining：===
