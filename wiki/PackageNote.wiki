@@ -15,7 +15,7 @@
   (目前就是项目内部使用的csr格式，未来可能会扩展为普通的dense matrix，或者其他的矩阵格式)
   * text2matrix
   (从普通的文本通过分词等操作转换为矩阵的一个类，可以看做是matrix的一种构造函数)
-  * 其他的一些跟数学打交道的地方（比如说与scipy的linalg的port）
+  * scipy_interface (与scipy的接口）
   * PCA (主成分提取)
 
 == clustering ==
