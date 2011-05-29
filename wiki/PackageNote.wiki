@@ -16,6 +16,7 @@
   * text2matrix
   (从普通的文本通过分词等操作转换为矩阵的一个类，可以看做是matrix的一种构造函数)
   * 其他的一些跟数学打交道的地方（比如说与scipy的linalg的port）
+  * PCA (主成分提取)
 
 == clustering ==
   * k-means
@@ -29,11 +30,9 @@
   (基于补集、以及进行了一些规范化处理的naive_bayes)
   * 其他的分类器以及分类评价器
 
-== filter ==
+== preprocessor ==
   * chisquare
   （卡方过滤器）
-  * PCA
-  （主成分提取，还未加入）
 
 == cf ==
   * 协同过滤的方法
