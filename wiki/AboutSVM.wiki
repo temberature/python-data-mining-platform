@@ -1,5 +1,3 @@
-#summary One-sentence summary of this page.
-
 = 计划 =
 
 在分类算法中加入C-SVC,首先可先实现2分类算法.
